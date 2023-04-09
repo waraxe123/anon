@@ -65,7 +65,7 @@ def subcribe(func):
 
     return wrapper
 
-CHANNEL_ID = -1001849476846
+CHANNEL_ID = -1001905531030
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
