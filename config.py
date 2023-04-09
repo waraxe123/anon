@@ -18,7 +18,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
 
-MUST_JOIN = getenv("MUST_JOIN", "kinoshitaee")
+MUST_JOIN = getenv("MUST_JOIN", "nosudouser")
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
