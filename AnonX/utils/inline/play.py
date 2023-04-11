@@ -165,7 +165,7 @@ def telegram_markup(_, chat_id):
             
             InlineKeyboardButton(
                 text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
+                callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="II", callback_data=f"ADMIN Pause|{chat_id}" 
