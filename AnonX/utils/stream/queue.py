@@ -13,7 +13,7 @@ async def put_queue(
     duration,
     user,
     vidid,
-   
+    user_id,
     stream,
     forceplay: Union[bool, str] = None,
 ):
@@ -30,7 +30,7 @@ async def put_queue(
         "chat_id": original_chat_id,
         "file": file,
         "vidid": vidid,
-       
+        "user_id": user_id,
         "seconds": duration_in_seconds,
         "played": 0,
     }
