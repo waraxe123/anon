@@ -319,11 +319,11 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_4"], url=f"{config.SUPPORT_CHANNEL}"
+                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
                 
             ),
             InlineKeyboardButton(
-                text=_["S_B_3"], url=f"{config.SUPPORT_GROUP}"
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                 
             ),
         ],
