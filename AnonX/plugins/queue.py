@@ -67,14 +67,14 @@ async def ping_com(client, message: Message, _):
     file = got[0]["file"]
     videoid = got[0]["vidid"]
     user = got[0]["by"]
-    user_id = got[0]["user_id"]
+   
     title = (got[0]["title"]).title()
     typo = (got[0]["streamtype"]).title()
     DUR = get_duration(got)
     if "live_" in file:
-        IMAGE = get_image(videoid, user_id)
+        IMAGE = get_image(videoid)
     elif "vid_" in file:
-        IMAGE = get_image(videoid, user_id)
+        IMAGE = get_image(videoid)
     elif "index_" in file:
         IMAGE = config.STREAM_IMG_URL
     else:
@@ -248,7 +248,7 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
     file = got[0]["file"]
     videoid = got[0]["vidid"]
     user = got[0]["by"]
-    user_id = got[0]["user_id"]
+ 
     title = (got[0]["title"]).title()
     typo = (got[0]["streamtype"]).title()
     DUR = get_duration(got)
