@@ -13,9 +13,6 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
 from AnonX import YouTube, app
 from AnonX.core.call import Anon
 from AnonX.misc import SUDOERS, db 
-from AnonX.utils.inline.play import (panel_markup_1, 
-                                          stream_markup, 
-                                          telegram_markup)
 from AnonX.utils import bot_sys_stats
 from AnonX.utils.database import (
     get_active_chats,
@@ -36,6 +33,9 @@ from AnonX.utils.inline import (
     telegram_markup_timer,
     close_keyboard,
 )
+from AnonX.utils.inline.play import (panel_markup_1, 
+                                          stream_markup, 
+                                          telegram_markup)
 from AnonX.utils.stream.autoclear import auto_clean
 from AnonX.utils.thumbnails import gen_thumb
 
