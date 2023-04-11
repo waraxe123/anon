@@ -12,7 +12,10 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     MUSIC_BOT_NAME, adminlist)
 from AnonX import YouTube, app
 from AnonX.core.call import Anon
-from AnonX.misc import SUDOERS, db
+from AnonX.misc import SUDOERS, db 
+from AnonX.utils.inline.play import (panel_markup_1, 
+                                          stream_markup, 
+                                          telegram_markup)
 from AnonX.utils import bot_sys_stats
 from AnonX.utils.database import (
     get_active_chats,
