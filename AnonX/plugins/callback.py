@@ -48,8 +48,8 @@ async def del_back_playlist(client, CallbackQuery, _):
     videoid, chat_id = callback_request.split("|")
     if videoid == str(None):
         buttons = telegram_markup(_, chat_id)
-    elif kondisi_1:
-        buttons = stream_markup(_, videoid, chat_id)  
+    elif 
+        
     else:
         buttons = panel_markup_1(_, videoid, chat_id)
     chat_id = CallbackQuery.message.chat.id
