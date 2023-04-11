@@ -24,9 +24,9 @@ QUEUE_COMMAND = get_command("QUEUE_COMMAND")
 basic = {}
 
 
-def get_image(videoid, user_id):
+def get_image(videoid):
     if os.path.isfile(f"cache/{videoid}_{user_id}.png"):
-        return f"cache/{videoid}_{user_id}.png"
+        return f"cache/{videoid}.png"
     else:
         return config.YOUTUBE_IMG_URL
 
