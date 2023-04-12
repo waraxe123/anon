@@ -491,7 +491,8 @@ async def markup_timer():
                         )
                         if markup == "stream"
                         else telegram_markup_timer(
-                            _,
+                            _, 
+                            playing[0]["vidid"],
                             chat_id,
                             seconds_to_min(playing[0]["played"]),
                             playing[0]["dur"],
