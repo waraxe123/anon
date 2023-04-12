@@ -266,7 +266,7 @@ close_keyboard = InlineKeyboardMarkup(
         )
 
 
-## Queue Markup
+## panel markup
 
 def panel_markup_1(_, videoid, chat_id):
     buttons = [
