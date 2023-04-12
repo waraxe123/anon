@@ -33,8 +33,7 @@ from AnonX.utils.inline import (
     telegram_markup_timer,
     close_keyboard,
 )
-from AnonX.utils.inline.play import (panel_markup_1, 
-                                     panel_markup_2,
+from AnonX.utils.inline.play import (panel_markup_2,
                                      panel_markup_3,
                                      stream_markup, 
                                      telegram_markup)
@@ -124,15 +123,11 @@ async def del_back_playlist(client, CallbackQuery, _):
         if pages == 0:
             buttons = panel_markup_2(_, videoid, chat_id)
         if pages == 2:
-            buttons = panel_markup_1(_, videoid, chat_id)
-        if pages == 1:
             buttons = panel_markup_3(_, videoid, chat_id)
     if state == "Back":
         if pages == 2:
             buttons = panel_markup_2(_, videoid, chat_id)
         if pages == 1:
-            buttons = panel_markup_1(_, videoid, chat_id)
-        if pages == 0:
             buttons = panel_markup_3(_, videoid, chat_id)
     try:
         await CallbackQuery.edit_message_reply_markup(
