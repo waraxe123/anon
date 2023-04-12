@@ -249,6 +249,16 @@ def slider_markup(
     return buttons
 
 
+close_keyboard = InlineKeyboardMarkup( 
+            [
+                [
+                    InlineKeyboardButton(
+                        text="ᴛᴜᴛᴜᴘ", callback_data="close"
+                    )
+                ]    
+            ]
+        )
+
 ## Cpanel Markup
 
 
