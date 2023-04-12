@@ -248,6 +248,7 @@ def slider_markup(
     ]
     return buttons
 
+## Extra Shit
 
 close_keyboard = InlineKeyboardMarkup( 
             [
