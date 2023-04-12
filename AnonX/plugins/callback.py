@@ -25,7 +25,7 @@ from AnonX.utils.inline import (
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
-    close_keyboard,
+    
 )
 from AnonX.utils.inline.play import (panel_markup_1,
                                           panel_markup_2,
