@@ -1,4 +1,6 @@
-import random
+import random 
+import os
+import asyncio
 
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
