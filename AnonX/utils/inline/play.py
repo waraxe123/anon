@@ -6,7 +6,7 @@
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-
+import math
 import random
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
