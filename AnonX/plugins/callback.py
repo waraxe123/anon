@@ -15,7 +15,14 @@ from AnonX.utils.database import (is_active_chat,
                                        music_on, mute_off, mute_on,
                                        set_loop)
 from AnonX.utils.decorators.language import languageCB
-from AnonX.utils.formatters import seconds_to_min
+from AnonX.utils.formatters import seconds_to_min 
+from AnonX.utils.inline import (
+    stream_markup,
+    stream_markup_timer,
+    telegram_markup,
+    telegram_markup_timer,
+    close_keyboard,
+)
 from AnonX.utils.inline.play import (panel_markup_1,
                                           panel_markup_2,
                                           panel_markup_3,
