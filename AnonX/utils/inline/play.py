@@ -131,7 +131,7 @@ def telegram_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="ᴄʟᴏsᴇ", callback_data=f"close"
+                text="ᴛᴜᴛᴜᴘ", callback_data=f"close"
             ),
         ],
     ]
