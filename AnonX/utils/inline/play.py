@@ -142,15 +142,12 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-                
+
+                text=_["PL_B_3"],
+
+                callback_data=f"PanelMarkup None|{chat_id}",
+
             ),
-            InlineKeyboardButton(
-                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                
-            ),
-        ],
-        [
             InlineKeyboardButton(
                 text="ᴛᴜᴛᴜᴘ", callback_data=f"close"
             )
