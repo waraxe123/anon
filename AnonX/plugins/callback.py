@@ -11,7 +11,8 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
 from AnonX import YouTube, app
 from AnonX.core.call import Anon
 from AnonX.misc import SUDOERS, db
-from AnonX.utils.database import (is_active_chat, get_active_chats,
+from AnonX.utils.database import (is_active_chat,
+                                       get_lang, get_active_chats,
                                        is_music_playing, is_muted,
                                        is_nonadmin_chat, music_off,
                                        music_on, mute_off, mute_on,
