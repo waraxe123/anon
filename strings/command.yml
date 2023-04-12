@@ -27,7 +27,6 @@ LOOP_COMMAND : ["loop", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["reboot"] 
 MUTE_COMMAND : ["mute", "cmute"]
-
 UNMUTE_COMMAND : ["unmute", "cunmute"]
 ADDSUDO_COMMAND : ["maddsudo", "addrandi", "randi"]
 DELSUDO_COMMAND : ["mdelsudo", "rmsudo", "bsdk", "bhakkbsdk"]
