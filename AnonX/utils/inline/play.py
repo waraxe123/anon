@@ -300,7 +300,142 @@ close_keyboard = InlineKeyboardMarkup(
 
 ## Queue Markup
 
+def panel_markup_1(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▷",
+                callback_data=f"ADMIN Resume|{chat_id}",
+            ),
+        
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="≪⊷",
+                callback_data=f"Pages Back|0|{videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔙",
+                callback_data=f"MainMarkup {videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⊶≫",
+                callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
+            ),
+        ],
+    ]
+    return buttons
 
+
+def panel_markup_2(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="🔇", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊",
+                callback_data=f"ADMIN Unmute|{chat_id}",
+            ),
+        
+            InlineKeyboardButton(
+                text="🔀",
+                callback_data=f"ADMIN Shuffle|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔁", callback_data=f"ADMIN Loop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="≪⊷",
+                callback_data=f"Pages Back|1|{videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔙",
+                callback_data=f"MainMarkup {videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⊶≫",
+                callback_data=f"Pages Forw|1|{videoid}|{chat_id}",
+            ),
+        ],
+    ]
+    return buttons
+
+
+def panel_markup_3(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="⏮¹⁰",
+                callback_data=f"ADMIN 1|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="‣‣I¹⁰",
+                callback_data=f"ADMIN 2|{chat_id}",
+            ),
+        
+            InlineKeyboardButton(
+                text="⏮³⁰",
+                callback_data=f"ADMIN 3|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="‣‣I³⁰",
+                callback_data=f"ADMIN 4|{chat_id}",
+            ),
+        ],
+        [ 
+            InlineKeyboardButton(
+                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="≪⊷",
+                callback_data=f"Pages Back|2|{videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔙",
+                callback_data=f"MainMarkup {videoid}|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⊶≫",
+                callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
+            ),
+        ],
+    ]
+    return buttons
+
+## queue markup 
 
 def queue_markup(_, videoid, chat_id):
     buttons = [
