@@ -50,7 +50,7 @@ async def markup_panel(client, CallbackQuery: CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
     videoid, chat_id = callback_request.split("|")
-    chat_id = CallbackQuery.message.chat.id
+  
 
     try:
         await CallbackQuery.edit_message_reply_markup(
