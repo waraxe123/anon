@@ -162,9 +162,16 @@ def stream_markup(_, videoid, chat_id):
 def telegram_markup(_, videoid, chat_id):
     buttons = [
         [
-            
-            
-            
+            InlineKeyboardButton(
+                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                
+            ),
+        ],
+        [           
             InlineKeyboardButton(
                 text="ᴛᴜᴛᴜᴘ", callback_data=f"close"
             ),
