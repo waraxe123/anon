@@ -68,7 +68,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur):
+def telegram_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
 
@@ -383,6 +383,24 @@ def panel_markup_3(_, videoid, chat_id):
                 text="⊶≫",
                 callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
             ),
+        ],
+    ]
+    return buttons
+
+def queue_markup(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+            ),
+            InlineKeyboardButton(
+                text="sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="ᴛᴜᴛᴜᴘ", callback_data=f"close"
+            )
         ],
     ]
     return buttons
