@@ -26,7 +26,7 @@ from AnonX.utils.database import (
 )
 from AnonX.utils.decorators.language import languageCB
 from AnonX.utils.formatters import seconds_to_min
-from YukkiMusic.utils.inline.play import (panel_markup_1,
+from AnonX.utils.inline.play import (panel_markup_1,
                                           panel_markup_2,
                                           panel_markup_3,
                                           stream_markup,
