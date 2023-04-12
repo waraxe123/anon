@@ -16,7 +16,8 @@ from AnonX.misc import SUDOERS, db
 from AnonX.utils import bot_sys_stats
 from AnonX.utils.database import (
     get_active_chats,
-    get_lang,
+    get_lang, 
+    is_muted,
     is_active_chat,
     is_music_playing,
     is_nonadmin_chat,
