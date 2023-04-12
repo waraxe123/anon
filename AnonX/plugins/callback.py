@@ -208,6 +208,28 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(
                 _["admin_22"], show_alert=True
             )
+    elif command == "Mute":
+        if await is_muted(chat_id):
+            return await CallbackQuery.answer(
+                _["admin_5"], show_alert=True
+            )
+        await CallbackQuery.answer()
+        await mute_on(chat_id)
+        await Yukki.mute_stream(chat_id)
+        await CallbackQuery.message.reply_text(
+            _["admin_6"].format(mention)
+        )
+    elif command == "Unmute":
+        if not await is_muted(chat_id):
+            return await CallbackQuery.answer(
+                _["admin_7"], show_alert=True
+            )
+        await CallbackQuery.answer()
+        await mute_off(chat_id)
+        await Yukki.unmute_stream(chat_id)
+        await CallbackQuery.message.reply_text(
+            _["admin_8"].format(mention) 
+            )
         check = db.get(chat_id)
         if not check:
             check.insert(0, popped)
