@@ -9,7 +9,7 @@
 
 import random
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import SUPPORT_GROUP
 from config import SUPPORT_CHANNEL
 
